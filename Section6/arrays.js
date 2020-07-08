@@ -18,6 +18,7 @@ console.log(names[1]);
 console.log(names.length);
 
 */
+/*
 
 // ARRAY OPERATIONS
 
@@ -42,8 +43,6 @@ console.log(pos);
 fruits.splice(1,2); // a partir de l'índex [1], elimina 2, és a dir fruits[1] i fruits[2] 
 console.log(fruits);
 
-
-
 // for 
 for(var i=0; i<fruits.length;i++){
     console.log(fruits[i]);
@@ -53,3 +52,9 @@ for(var i=0; i<fruits.length;i++){
 fruits.forEach(function(element, index, array) {
     console.log(element, index);
 });
+
+*/
+
+var diffTypesArray = ['JavaScript', 123, null, 'programming', 13.7, true];
+
+console.log(diffTypesArray);
