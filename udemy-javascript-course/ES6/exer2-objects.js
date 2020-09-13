@@ -1,5 +1,5 @@
 // creation of an object
-/*
+
 let book1 = {
     title: 'JavaScript Book',
     author: 'John Doe',
@@ -21,7 +21,6 @@ let getReview = (book) => {
 };
 
 console.log(getReview(book2));
-*/
 
 let employee = {
     name: 'John',

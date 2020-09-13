@@ -1,8 +1,5 @@
-//
-// ES6 variables
-//
+//VARIABLES LET & CONST
 
-/*
 const name = 'John';
 let age = 28;
 console.log(`${name}, ${age}`);
@@ -11,12 +8,13 @@ name = 'Eva';  // error porque no se puede modificar una constante
 age = 33;
 console.log(`${name}, ${age}`);
 
-//
-// Code Blocks and Scope
-//
 
+//CODE BLOCK AND SCOPE
+
+/*
 code block = código escrito entre dos { }.
 scope = es el alcance que tiene una variable dentro o fuera de un bloque de código.about.
+*/
 
 {
     const a = 3;
@@ -24,21 +22,17 @@ scope = es el alcance que tiene una variable dentro o fuera de un bloque de cód
 }
 console.log(a+b);
 
-las variables no están definidas. Esto ocurre porque tanto 'a' como 'b' están
+/*
+las variables no están definidas. Esto ocurre porque tanto 'a' como 'b' están 
 dentro del bloque. Esta es la razón por la que usamos 'return' en las funciones,
 para poder traer, fuera del bloque el valor de la/s variables.
+*/
 
-//
-// Template Strings
-//
+//TEMPLATE STRINGS
 
 console.log(`${name}, ${age}`); // `` se usan para determinar el Template String
 
-
-
-//
-// Funciones de cadena
-//
+//STRING FUNCTIONS
 
 let name = 'John';
 let surname = 'Doe';
@@ -51,20 +45,17 @@ console.log(completeName.startsWith('Br'));
 console.log(completeName.startsWith('Jo'));
 console.log(completeName.endsWith('oe'));
 
-//
-// Arrow Functions (Funciones flecha)  ( ) => { }
-//
+//ARROW FUNCTIONS  ( ) => { }
 
 const years = [2000, 2005, 2008, 2010, 2015, 2019];
 
-// ES5
+//ES5
 var year5 = years.map(function(year) {
     return 2020-year;
 });
 console.log(year5);
 
-
-// ES6
+//ES6
 let year6 = years.map(year => 2020 - year);
 console.log(year6);
 
@@ -83,9 +74,7 @@ console.log(year6);
 let pow = (num) => num * num;
 console.log(pow(5));
 
-//
-// Destructuring
-//
+//DESTRUCTURING
 
 const human = {
     name: 'John',
@@ -97,14 +86,14 @@ const { name, age } = human;
 console.log(name);
 console.log(age);
 
-//
-// Maps
-//
+//MAPS
 
-// Los mapas son estructuras de datos parecidos a los arrays pero, en vez de trabajar
-// con ínices y valores lo hace con 'keys' (claves) y valores. Un valor está relacionado
-// a una clave. La diferencia es que mientras que los índices siempre son de tipo númerico,
-// las key pueden ser de tipo numérico, string, object...
+/*
+Los mapas son estructuras de datos parecidos a los arrays pero, en vez de trabajar
+con ínices y valores lo hace con 'keys' (claves) y valores. Un valor está relacionado
+a una clave. La diferencia es que mientras que los índices siempre son de tipo númerico,
+las key pueden ser de tipo numérico, string, object...
+*/
 
 const data = new Map();
 
@@ -125,11 +114,7 @@ data.forEach((value, key) => {
     console.log(`${key}: ${value}`);
 });
 
-//
 // SPREAD OPERATOR
-//
-
-// spread operator = ...
 
 const addition = function (a, b, c, d) {
     return a + b + c + d;
@@ -147,5 +132,3 @@ const marketing = ['Helen', 'Mike', 'Alex'];
 
 const employees = [...rrhh, ...marketing];
 console.log(employees);
-
-*/

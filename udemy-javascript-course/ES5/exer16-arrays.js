@@ -1,7 +1,5 @@
 // ARRAYS - SECTION 6
 
-/*
-
 var drinks = ['coffee', 'tea', 'lemonade'];
 var food = new Array('cake', 'cookies', 'sandwich');
 console.log(drinks[0]);
@@ -16,9 +14,6 @@ names[1] = 'Caroline';
 console.log(names[1]);
 
 console.log(names.length);
-
-*/
-/*
 
 // ARRAY OPERATIONS
 
@@ -52,8 +47,6 @@ for(var i=0; i<fruits.length;i++){
 fruits.forEach(function(element, index, array) {
     console.log(element, index);
 });
-
-*/
 
 var diffTypesArray = ['JavaScript', 123, null, 'programming', 13.7, true];
 
